@@ -92,6 +92,19 @@ body::before {
   padding: 4rem 0;
 }
 
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 600ms ease,
+    transform 600ms ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .hero {
   min-height: 78vh;
   display: grid;
@@ -298,7 +311,15 @@ body::before {
   color: var(--accent-strong);
 }
 
-.project-status.muted {
+.project-status.live {
+  color: #96f0ff;
+}
+
+.project-status.progress {
+  color: #7c9cff;
+}
+
+.project-status.future {
   color: var(--muted);
 }
 

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Kyle's personal portfolio site featuring current skills, projects, and future builds."
+    />
+    <title>Kyle | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#top">Kyle</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero section">
+          <div class="hero-copy">
+            <p class="eyebrow">Hey, I’m Kyle.</p>
+            <h1>Building cool things one project at a time.</h1>
+            <p class="hero-text">
+              This is my little corner of the internet — a place to share what I’m
+              learning, what I’m making, and the projects that come next.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects">See Projects</a>
+              <a
+                class="button button-secondary"
+                href="https://github.com/TheCyberDust"
+                target="_blank"
+                rel="noreferrer"
+                >GitHub</a
+              >
+            </div>
+          </div>
+          <div class="hero-card">
+            <p class="card-label">Current focus</p>
+            <ul>
+              <li>Building useful projects instead of collecting tutorials</li>
+              <li>Exploring AI, cyber security, and hands-on software ideas</li>
+              <li>Turning this site into a home for future builds</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section" id="about">
+          <div class="section-heading">
+            <p class="eyebrow">About</p>
+            <h2>A chill site with room to grow.</h2>
+          </div>
+          <div class="about-grid">
+            <p>
+              I’m a coder, tinkerer, and techie. Right now my interest lies in the
+              rapidly advancing field of AI, but I have a general computer science
+              background with a heavy focus on cyber security. Right now I’m focused
+              on getting better by making stuff that’s actually useful.
+            </p>
+            <p>
+              This portfolio starts simple on purpose. Over time, it’ll turn into a
+              running log of the things I make, improve, break, and rebuild.
+            </p>
+          </div>
+        </section>
+
+        <section class="section" id="projects">
+          <div class="section-heading">
+            <p class="eyebrow">Projects</p>
+            <h2>More things are on the way.</h2>
+          </div>
+          <div class="project-grid">
+            <article class="project-card featured">
+              <div>
+                <p class="project-tag">Now</p>
+                <h3>This portfolio site</h3>
+                <p>
+                  The first project in the stack — a clean home base for everything
+                  that comes next.
+                </p>
+              </div>
+              <span class="project-status">Live now</span>
+            </article>
+
+            <article class="project-card">
+              <div>
+                <p class="project-tag">Next build</p>
+                <h3>Interactive web project</h3>
+                <p>
+                  The next spot is reserved for a more hands-on build — something
+                  practical, interactive, and worth using.
+                </p>
+              </div>
+              <span class="project-status muted">Coming soon</span>
+            </article>
+
+            <article class="project-card">
+              <div>
+                <p class="project-tag">Future experiment</p>
+                <h3>AI or security-flavored idea</h3>
+                <p>
+                  A home for future experiments that lean into AI, cyber security,
+                  or anything else interesting enough to explore.
+                </p>
+              </div>
+              <span class="project-status muted">Coming soon</span>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="skills">
+          <div class="section-heading">
+            <p class="eyebrow">Skills</p>
+            <h2>Current toolkit.</h2>
+          </div>
+          <div class="chip-group" aria-label="Skills list">
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">Python</span>
+            <span class="chip">C++</span>
+            <span class="chip">Java</span>
+            <span class="chip">Cyber Security</span>
+            <span class="chip">AI</span>
+            <span class="chip">GitHub</span>
+          </div>
+        </section>
+
+        <section class="section contact-section" id="contact">
+          <div class="section-heading">
+            <p class="eyebrow">Contact</p>
+            <h2>Find me where the code lives.</h2>
+          </div>
+          <p>
+            For now, GitHub is the best place to keep up with what I’m making and
+            what I’m building next.
+          </p>
+          <a
+            class="button button-primary"
+            href="https://github.com/TheCyberDust"
+            target="_blank"
+            rel="noreferrer"
+            >Visit github.com/TheCyberDust</a
+          >
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>© <span id="year"></span> Kyle. Built with a dark theme and good intentions.</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -175,6 +175,13 @@ body::before {
   transform: translateY(-2px);
 }
 
+.button:focus-visible,
+.site-nav a:focus-visible,
+.footer-link:focus-visible {
+  outline: 2px solid var(--accent-strong);
+  outline-offset: 4px;
+}
+
 .button-primary {
   background: linear-gradient(135deg, var(--accent), var(--accent-strong));
   color: #09111f;
@@ -185,6 +192,18 @@ body::before {
   color: var(--text);
   border: 1px solid var(--border);
   background: rgba(255, 255, 255, 0.03);
+}
+
+.button-disabled {
+  color: var(--muted);
+  border: 1px dashed var(--border);
+  background: rgba(255, 255, 255, 0.02);
+  cursor: default;
+}
+
+.button-disabled:hover,
+.button-disabled:focus-visible {
+  transform: none;
 }
 
 .hero-card,
@@ -352,15 +371,43 @@ body::before {
   padding-bottom: 2rem;
 }
 
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
 .site-footer {
   padding-top: 1rem;
   border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  align-items: flex-start;
 }
 
 .site-footer p {
   margin: 0;
   color: var(--muted);
   font-size: 0.95rem;
+}
+
+.footer-name {
+  color: var(--text);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.footer-tag {
+  margin-bottom: 0.35rem;
+}
+
+.footer-link {
+  color: var(--accent-strong);
+  text-decoration: none;
+  font-weight: 700;
 }
 
 @media (max-width: 900px) {
@@ -392,8 +439,13 @@ body::before {
     padding: 3rem 0;
   }
 
-  .hero-actions {
+  .hero-actions,
+  .contact-actions {
     flex-direction: column;
     align-items: stretch;
+  }
+
+  .site-footer {
+    flex-direction: column;
   }
 }
